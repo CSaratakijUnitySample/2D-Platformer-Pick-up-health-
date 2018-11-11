@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61496652745040014}
   - component: {fileID: 58157547062579972}
   - component: {fileID: 114091297035214810}
+  - component: {fileID: 114550054155471720}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -147,11 +148,24 @@ MonoBehaviour:
   moveForce: 360
   jumpForce: 700
   gravity: 30
-  maxVerticalForce: 550
+  terminalVelocity: 550
   ground: {fileID: 4483366956249144}
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
+--- !u!114 &114550054155471720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177175208556038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf9a90a341a6734a9d960cab7d812c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: 4
+  max: 100
 --- !u!212 &212542139723826972
 SpriteRenderer:
   m_ObjectHideFlags: 1
